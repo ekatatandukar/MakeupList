@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<!-- This tag specifies which characted set a website is written with. UTF-8 (Universal Character Set+ TransformationFormal--8 bit) is a character encoding capable of encoding allpossible characters in unicode.UTF-8 (Unicode) covers almost all of the characters and symbols in the world. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--sets the width of the page to follow the screen-width of the device -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	 <!-- allows web authors to choose what version of Internet Explorer the page should be rendered as-->
+	<title>MakeupList</title>
+	<link rel="stylesheet" href="index.css">
+	<!-- <link rel="stylesheet" href="../style/header.css">
+	<link rel="stylesheet" href="../style/footer.css">
+	<link rel="stylesheet" href="../style/contact.css"> -->
+
+</head>
+
+<body>
+
+	<header id="header-nav">
+
+			<div class="nav-bar">
+				<a><img src="assets/images/cosmetics.png" alt="ekata" class="logo"></a>
+				<div class="main-nav">
+					<a>Just</a>
+					<a>For</a>
+					<a>Fun</a>
+					<a>JavaScropt</a>
+					<a href="#">Contact</a> 
+				</div>
+			</div>
+			
+	</header>
+	
+	<div class="makeup-container">
+		<h1 style="text-transform: uppercase; margin-bottom: 6px">Make-up List</h1>
+
+		<form name="makeup-form" onsubmit="submission()">
+		    <input type="text" placeholder="Product Name" name="name">
+    		<input type="text" placeholder="Product Brand" name="brand">
+    		<input type="text" placeholder="Product Code" name="code">
+		    <input type="submit" value="Submit">
+		    </div>
+          </form>
+          
+
+          <div class="table-container">
+    
+            <table>
+                <tr>
+                    <th>Product Brand</th>
+                    <th>Product Name</th> 
+                    <th>Product Code</th>
+                    <th></th>
+                </tr> 
+
+                <tbody id="makeup-list">
+                </tbody>
+    
+                  <!-- <tr>
+                    <td>1</td>
+                    <td>index.html (Home Page)</td>
+                    <td>While every other websites</td>
+                </tr> -->
+    
+                 
+            </table>
+        </div>
+
+	</div>	
+
+	<footer>
+		<p class="subhead">Let's stay connected!</p>
+
+		<div class="social">
+ 			<a href="https://www.facebook.com/ekata.tandukar"><img class="social-icons" src="assets/images/facebook.svg"></a>
+  			<a href="https://www.instagram.com/ekatatandukar/"><img class="social-icons" src="assets/images/instagram.svg"></a>
+  			<a href="https://www.youtube.com/channel/UCIgaeWZ3rOxDRxOMiCyZ_TA"><img class="social-icons" src="assets/images/youtube.svg"></a>
+  			<a href="mailto:tandukarekata13@gmail.com"><img class="social-icons" src="assets/images/email-white.svg"></a>
+				
+		</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

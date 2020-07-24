@@ -1,0 +1,271 @@
+
+@font-face{
+	font-family: "Montserrat Regular";
+	src: url("../assets/fonts/Montserrat-Light.otf") format("opentype");
+	/*font-weight: 400;*/
+}
+
+@font-face{
+	font-family: "Montserrat Semi-bold";
+	src: url("../assets/fonts/Montserrat-SemiBold.otf") format("opentype");
+	/*font-weight: 600;*/
+}
+
+@font-face{
+	font-family: "Montserrat Extra-bold";
+	src: url("../assets/fonts/Montserrat-ExtraBold.otf") format("opentype");
+	/*font-weight: 800;*/
+}
+
+@font-face{
+	font-family: "Montserrat Black";
+	src: url("../assets/fonts/Montserrat-Black.otf") format("opentype");
+	/*font-weight: 900;*/
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a, p, h1, h2, h3, small, section, div, textarea, input, ol, button{
+    color: #212121;
+    text-decoration: none;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 3em;
+    font-family: 'Montserrat Black', sans-serif;
+    margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/*------------------container of the entire contacts page-----------------------*/
+.makeup-container{
+    width: 40%;
+    float: center;
+    margin: 10em auto 3em auto;
+    text-align: center;
+}
+
+
+/*------------------styling the text fields-----------------------*/
+input[type=text], textarea{
+    width: 100%; /*width of  the text field*/
+    padding: 12px 20px; /*padding of the text inside the text field */
+    margin: 8px 0; 
+    border: 1px solid #ffffff;
+    border-radius: 1px; /* tapered ends*/
+    box-sizing: border-box; 
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    /*border-radius: 11px;*/
+    color: black; /*colour of text inside the text field  */
+}
+
+
+/*------------------focuses the text field which is being used-----------------------*/
+input[type=text]:focus{
+	border: 2px solid black;
+}
+
+
+/*------------------border and padding of the division which contains submit button-----------------------
+.submit-btn{
+ 	border-bottom: 1px solid black;
+ 	padding-bottom: 10px;
+}*/
+
+
+/*------------------styling the submit button-----------------------*/
+input[type=submit] {
+    background-color: #fd758c;
+    color: white; /* text colour*/
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    /*border: 1px solid black;*/
+    border-radius: 4px; /*tapered corners */
+    cursor: pointer; /*hand-like pointer when hovered*/
+    float: center;
+    transition: 0.2s ease-in-out;
+}
+
+
+/*------------------hover effect on submit button-----------------------*/
+input[type=submit]:hover {
+    /*background-color: #fd758c;*/
+    border:none;
+    /*color: white;*/
+    opacity: 0.5;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.2);
+    transition: 0.2s ease-in-out;
+}
+
+/* *---------------------header css ------------------------------* */
+
+header{
+	width: 100%;
+	background: #FFFFFF;
+	/*padding: 1.5em 0; */
+	/* top-bottom and right left padding */
+	position: fixed;
+	top: 0;
+	z-index: 99; /*adding layer over another layer */
+	/*specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. can be used only with positioned elements*/ 
+	border-bottom: 1px solid #ebebeb;
+}
+
+#header-nav {
+	padding: 1.5em 0; 
+	transition: .2s;
+}
+
+/*--------------styling navigation bar-----------------------*/
+header .nav-bar{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	/*padding: 1.5em 0;*/
+	/*	displays the nav-bar and logo in same line*/
+	justify-content: space-between;
+	/*creates a space between logo and nav-bar*/
+	align-items: center;
+	/*center with respect to height*/
+}
+
+
+/*..............logo on the left side of navigation bar-------------*/
+.logo{
+	height: 60px;
+	transition: .2s;
+}
+
+
+/*...........hover effect in the logo--------------------*/
+.logo:hover{
+	opacity: 0.5;
+}
+
+
+/*-----------the actual navigation bar which contains home, contact, cv, etc------*/
+.main-nav a{
+	padding-left: 3rem;
+	/*space on the left between each element in the main nav-bar*/
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .8rem;
+}
+
+.main-nav a:hover{
+	font-weight: 600;
+	color:#fd758c;
+}
+
+
+
+/* *---------------------footer css----------------* */
+footer {
+    background: #fd758c;
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 5em;
+}
+
+footer .subhead{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.social{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 10%;
+	margin: 0 auto;
+}
+
+.social-icons{
+	height: 24px;
+}
+
+.social-icons:hover{
+    opacity: 0.5;
+}
+
+
+
+/* *------------TABLE CSS---------------* */
+
+.table-container{
+    width: 60%;
+    float: center;
+    margin: 5em auto;
+    text-align: center;
+}
+
+
+table{
+	width:100%; /*width of table*/
+	/*border: 1px solid black;*/
+	/*border-radius: 25px;*/
+}
+
+
+/*------padding of each row----------------------*/
+th, td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/*---------zebra pattern of table------------*/
+tr:nth-child(even) {background-color: #f7f7f7;}
+
+
+/*----------styling text of the headings----------*/
+th{
+	font-weight: 300;
+	color: #9b9b9b;
+	letter-spacing: 1.5px;
+}
+
+/*-----------styling text of table datas------------*/
+td{
+	font-weight: 100;
+	font-size: 15px;
+	color: #5b5b5b;
+	letter-spacing: 1.5px;
+}
+
+
+/*----------screenshots of webpages---------------*/
+.my-webpage-screenshot{
+	height: 230px;
+	overflow: hidden;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+
+/*----------hover effect for screenshots----------*/
+.my-webpage-screenshot:hover{
+	opacity: 0.7;
+	box-shadow: 3px 3px 20px rgba(0,0,0,0.2);
+}
+
+
+/*----------headings of screenshots, ie, my webpage and reference----------*/
+.text-in-screenshot-column{
+	padding-bottom: 2em;
+	/*border-bottom: 1px solid grey;*/
+}
